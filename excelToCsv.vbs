@@ -29,8 +29,9 @@ For Each folder in folders
 
           If objXL.Application.WorksheetFunction.CountA(sheet.Cells) <> 0 Then
           rem sheet.Rows(1).delete ' this will remove Row 1 or the header Row
-            sheet.SaveAs startFolderObj.Path & "\" & folder.Name & "_" & sheet.Name & ".csv", 6 'CSV
+            sheet.SaveAs startFolderObj.Path & "\" & folder.Name & "_" & sheet.Name & ".txt", 6 'xml spreadsheet
           End If
+		  
         Next
 
         rem clean up
